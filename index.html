@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>mujahid bank</title>
@@ -45,29 +47,29 @@
     <br>
 
 
-    <section class="h-screen mx-auto flex flex-col items-center justify-center ">
-        <div class="md: w-9/12 mx-auto flex gap-5 justify-between items-center mb-5">
+    <section class="mx-auto md:flex flex-col items-center justify-center ">
+        <div class="w-9/12 mx-auto md:flex gap-5 justify-between items-center mb-5">
 
-            <div class="md: w-full flex flex-col justify-between items-start bg-yellow-500 py-20 px-10 rounded-lg">
+            <div class="w-full md:flex flex-col justify-between items-start bg-yellow-500 py-20 px-10 rounded-lg mb-5">
                 <p class="text-xl font-semibold text-black capitalize mb-3">diposite</p>
                 <h2 class="text-5xl font-bold text-black capitalize">$<span id="diposite">00</span></h2>
             </div>
 
 
-            <div class="md:w-full flex flex-col justify-between items-start bg-orange-500 py-20 px-10 rounded-lg">
+            <div class="w-full flex flex-col justify-between items-start bg-orange-500 py-20 px-10 rounded-lg mb-5">
                 <p class="text-xl font-semibold text-black capitalize mb-3">Total balance</p>
                 <h2 class="text-5xl font-bold text-black capitalize">$<span id="Total_balance">100</span></h2>
             </div>
 
 
-            <div class="md: w-full flex flex-col justify-between items-start bg-sky-500 py-20 px-10 rounded-lg">
+            <div class="w-full flex flex-col justify-between items-start bg-sky-500 py-20 px-10 rounded-lg mb-5">
                 <p class="text-xl font-semibold text-black capitalize mb-3">withdrow</p>
                 <h2 class="text-5xl font-bold text-black capitalize">$<span id="withdrow">00</span></h2>
             </div>
 
 
         </div>
-        <div class="md:w-9/12 mx-auto flex gap-5 justify-between items-center">
+        <div class="w-9/12 mx-auto md:flex gap-5 justify-between items-center">
 
             <div class=" md:w-full flex flex-col justify-between items-start bg-lime-500 py-20 px-10 rounded-lg mb-3">
                 <h2 class="text-2xl font-bold text-black capitalize mb-3">your diposit</h2>
@@ -79,7 +81,7 @@
 
             <div class=" md:w-full flex flex-col justify-between items-start bg-blue-500 py-20 px-10 rounded-lg mb-3">
                 <h2 class="text-2xl font-bold text-black capitalize mb-3">your withdrow</h2>
-                <input id="withdrowInput" type="number" placeholder=" your withdrow cradit"
+                <input id="withdrowInput" type="text" placeholder=" your withdrow cradit"
                     class="input input-bordered w-full mb-3 font-semibold text-base" />
                 <button id="withdrow_btn" class="btn btn-block font-bold text-lg">withdrow</button>
             </div>
